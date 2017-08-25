@@ -7,6 +7,8 @@ To get started, you'll need to install both the [WP REST API plugin](https://git
 
 To use this library, you will need to run `composer install` from the root of the library, and then include the main library file, `wp-api-connect.php` and the composer autoloader, `vendor/autoload.php` from your plugin/theme.
 
+_(**Hint:** If you would like to have a UI for saving client keys and testing the connection, Check out the [WP API Connect UI](https://github.com/zao-web/wp-api-connect-ui).)_
+
 Once installed and activated, you'll need to create a '[Client Application](http://v2.wp-api.org/guide/authentication/#oauth-authentication)'.
 When you have the Client key and secret, you'll create a new `Zao\WP_API\OAuth1\Connect` object by passing those credentials along with the REST API URL and the registered callback URL:
 
